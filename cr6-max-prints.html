@@ -2,74 +2,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barnes 3D Printing :: CR-6 Max Prints</title>
-  <link rel="stylesheet" href="static/styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Barnes 3D Printing :: CR-6 Max Prints</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
+<header>
+	<div class="topnav" id="myTopnav">
+		<a href="index.html" class="logo">
+			<img src="images/logo.png" alt="Home">
+		</a>
+		<a href="about.html">About Me</a>
+		<div class="dropdown">
+			<button class="dropbtn">Printers & Capabilities
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="cr-6-max.html">CR-6 Max</a>
+				<a href="photon-s.html">Anycubic Photon S</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Services Offered
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="fdm.html">FDM Printing Service</a>
+				<a href="sla.html">SLA Printing Service</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Gallery/Portfolio
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="cr6-max-prints.html">CR-6 Prints</a>
+				<a href="photon-s-prints.html">Photon S Prints</a>
+			</div>
+		</div>
+		<a href="contact.html">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+	</div>
+	<div class="hero-image">
+		<h1 class="font-effect-anaglyph">BARNES 3D PRINTING</h1>
+	</div>
+</header>
+
 <body>
-  <header>
-    <nav>
-      <ul class="navbar">
-        <a href="index.html" class="logo">
-          <img src="images/logo.png" alt="Your Logo">
-        </a>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li class="dropdown">
-          <a href="#">Printers & Capabilities</a>
-          <div class="dropdown-content">
-            <a href="cr-6-max.html">CR-6 Max</a>
-            <a href="photon-s.html">Anycubic Photon S</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#">Services Offered</a>
-          <div class="dropdown-content">
-            <a href="fdm.html">FDM Printing Service</a>
-            <a href="sla.html">SLA Printing Service</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#">Gallery/Portfolio</a>
-          <div class="dropdown-content">
-            <a href="cr6-max-prints.html">CR-6 Prints</a>
-            <a href="photon-s-prints.html">Photon S Prints</a>
-          </div>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+	<main>
+		<h1>CR-6 Max Prints</h1>
+		<p>Here are some examples of prints I have done on my Creality CR-6 Max. Each of the prints in the examples were
+			printed with a .4mm nozzle and .2mm layer height.</p>
+		<div class="scroll-container">
+			<img src="images/fdm_print_1.jpg" alt="Deadpool Bust (Front)" onclick="expandImage(this);">
+			<img src="images/fdm_print_2.jpg" alt="Deadpool Bust (Rear)" onclick="expandImage(this);">
+			<img src="images/fdm_print_3.jpg" alt="Deadpool Bust (Chest Detail)" onclick="expandImage(this);">
+			<img src="images/fdm_print_4.jpg" alt="Deadpool Bust (Face Detail)" onclick="expandImage(this);">
+			<img src="images/fdm_print_5.jpg" alt="T-Rex Skull (Front)" onclick="expandImage(this);">
+			<img src="images/fdm_print_6.jpg" alt="T-Rex Skull (Tooth Detail)" onclick="expandImage(this);">
+			<img src="images/fdm_print_7.jpg" alt="T-Rex Skull (Eye Detail)" onclick="expandImage(this);">
+		</div>
 
-  <main>
-    <h1>CR-6 Max Prints</h1>
-    <section class="prints-gallery">
-      <div class="print-item">
-        <img src="images/image1.jpg" alt="CR-6 Max Print 1">
-        <p>Description for Print 1...</p>
-      </div>
-      <div class="print-item">
-        <img src="images/image2.jpg" alt="CR-6 Max Print 2">
-        <p>Description for Print 2...</p>
-      </div>
-      <!-- Add more print items with images and descriptions -->
-    </section>
-  </main>
+		<div class="container">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			<img id="expandedImg" style="width:100%">
+			<div id="imgtext"></div>
+		</div>
+	</main>
 
-  <footer>
-    <div class="footer-bottom">
-      &copy; 2023 Barnes Printing Company. All rights reserved.
-    </div>
-  </footer>
+	<footer>
+		<div class="footer-bottom">
+			&copy; 2023 Barnes Printing Company. All rights reserved.
+		</div>
+	</footer>
+	
+	<script>
+		function responsiveNav() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+
+		function expandImage(imgs) {
+			var expandImg = document.getElementById("expandedImg");
+			var imgText = document.getElementById("imgtext");
+			expandImg.src = imgs.src;
+			imgText.innerHTML = imgs.alt;
+			expandImg.parentElement.style.display = "block";
+		}    
+	</script>
 </body>
 
 </html>
