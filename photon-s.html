@@ -5,66 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barnes 3D Printing :: Photon S</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
     <link rel="stylesheet" href="static/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Your Logo">
-                </a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li class="dropdown">
-                    <a href="#">Printers & Capabilities</a>
-                    <div class="dropdown-content">
-                        <a href="cr-6-max.html">CR-6 Max</a>
-                        <a href="photon-s.html">Anycubic Photon S</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Services Offered</a>
-                    <div class="dropdown-content">
-                        <a href="fdm.html">FDM Printing Service</a>
-                        <a href="sla.html">SLA Printing Service</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Gallery/Portfolio</a>
-                    <div class="dropdown-content">
-                        <a href="cr6-max-prints.html">CR-6 Prints</a>
-                        <a href="photon-s-prints.html">Photon S Prints</a>
-                    </div>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Home">
+            </a>
+            <a href="about.html">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">Printers & Capabilities
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="cr-6-max.html">CR-6 Max</a>
+                    <a href="photon-s.html">Anycubic Photon S</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Services Offered
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="fdm.html">FDM Printing Service</a>
+                    <a href="sla.html">SLA Printing Service</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Gallery/Portfolio
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="cr6-max-prints.html">CR-6 Prints</a>
+                    <a href="photon-s-prints.html">Photon S Prints</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+        </div>
+
+        <div class="hero-image">
+            <h1 class="font-effect-anaglyph">BARNES 3D PRINTING</h1>
+        </div>
     </header>
 
     <main>
         <h1>Anycubic Photon S</h1>
         <section class="printer-details">
             <h2>Printer Details</h2>
-            <p>The Anycubic Photon S is a high-resolution resin-based 3D printer...</p>
-            <!-- Add more details about the Anycubic Photon S here -->
+            <p>The Anycubic Photon S is a high-resolution resin-based 3D printer that uses a UV light source to cure liquid resin into solid objects. The Photon S is capable of printing at a layer height of 0.01mm, which is 1/10th the thickness of a sheet of paper. This allows for extremely high-resolution prints with an exceptional surface finish. The Photon S is capable of printing at a maximum build volume of 115mm x 65mm x 165mm.</p>
+            <p>The Photon S is capable of printing with a wide variety of resins, including standard resins, flexible resins, and castable resins. The Photon S is also capable of printing with third-party resins, which allows for a wide variety of colors and material properties.</p>
         </section>
 
         <section class="printer-specs">
             <h2>Specifications</h2>
             <ul>
                 <li>Printing Technology: Resin-based (SLA/DLP)</li>
-                <li>Build Volume: ...</li>
-                <!-- Add specific printer specifications -->
+                <li>Build Volume: 115mm x 65mm x 165mm</li>
+                <li>Layer Height: 0.01mm - 0.2mm</li>
+                <li>XY Resolution: 0.047mm</li>
+                <li>Light Source: UV LED</li>
+                <li>Connectivity: USB</li>
+                <li>Printer Dimensions: 230mm x 200mm x 400mm</li>
+                <li>Printer Weight: 4.5kg</li>
             </ul>
+        </section>
+
+        <section class="printer-image">
+            <h2>Printer Image</h2>
+            <div class="printer-image">
+                <img src="images/printer_photon_s.jpg" alt="Anycubic Photon S">
+            </div>
         </section>
     </main>
 
@@ -73,6 +94,17 @@
             &copy; 2023 Barnes Printing Company. All rights reserved.
         </div>
     </footer>
+
+    <script>
+        function responsiveNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

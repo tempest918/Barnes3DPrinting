@@ -5,66 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barnes 3D Printing :: CR-6 Max</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
     <link rel="stylesheet" href="static/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Your Logo">
-                  </a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li class="dropdown">
-                    <a href="#">Printers & Capabilities</a>
-                    <div class="dropdown-content">
-                        <a href="cr-6-max.html">CR-6 Max</a>
-                        <a href="photon-s.html">Anycubic Photon S</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Services Offered</a>
-                    <div class="dropdown-content">
-                        <a href="fdm.html">FDM Printing Service</a>
-                        <a href="sla.html">SLA Printing Service</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Gallery/Portfolio</a>
-                    <div class="dropdown-content">
-                        <a href="cr6-max-prints.html">CR-6 Prints</a>
-                        <a href="photon-s-prints.html">Photon S Prints</a>
-                    </div>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-      </header>
-      
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Home">
+            </a>
+            <a href="about.html">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">Printers & Capabilities
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="cr-6-max.html">CR-6 Max</a>
+                    <a href="photon-s.html">Anycubic Photon S</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Services Offered
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="fdm.html">FDM Printing Service</a>
+                    <a href="sla.html">SLA Printing Service</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Gallery/Portfolio
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="cr6-max-prints.html">CR-6 Prints</a>
+                    <a href="photon-s-prints.html">Photon S Prints</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+        </div>
+
+        <div class="hero-image">
+            <h1 class="font-effect-anaglyph">BARNES 3D PRINTING</h1>
+        </div>
+    </header>
+
     <main>
         <h1>CR-6 Max</h1>
         <section class="printer-details">
             <h2>Printer Details</h2>
-            <p>The CR-6 Max is a versatile 3D printer known for its...</p>
-            <!-- Add more details about the CR-6 Max here -->
+            <p>The CR-6 Max is a versatile 3D printer known for its large build volume and high-quality prints. It is
+                capable of printing with a variety of materials, including PLA, ABS, PETG, TPU, and more. The CR-6 Max
+                is a great choice for printing large, functional parts.</p>
+            <p>The CR-6 Max is a Cartesian-style printer, meaning that it uses a gantry system to move the print head
+                along the X and Y axes, and a bed that moves along the Z axis. The CR-6 Max is equipped with a heated
+                bed, which allows it to print with a variety of materials. The CR-6 Max is also equipped with a
+                filament runout sensor, which pauses the print if the printer runs out of filament.</p>
         </section>
 
         <section class="printer-specs">
             <h2>Specifications</h2>
             <ul>
                 <li>Printing Technology: FDM</li>
-                <li>Build Volume: ...</li>
-                <!-- Add specific printer specifications -->
+                <li>Build Volume: 400mm x 400mm x 400mm</li>
+                <li>Layer Resolution: 0.1mm - 0.4mm</li>
+                <li>Maximum Print Speed: 80mm/s</li>
+                <li>Maximum Travel Speed: 150mm/s</li>
+                <li>Maximum Hotend Temperature: 260&deg;C</li>
+                <li>Maximum Heated Bed Temperature: 110&deg;C</li>
+                <li>Supported Materials: PLA, ABS, PETG, TPU, and more</li>
+                <li>Connectivity: USB, SD Card</li>
+                <li>Printer Dimensions: 650mm x 550mm x 720mm</li>
+                <li>Printer Weight: 15kg</li>
             </ul>
+        </section>
+
+        <section class="printer-image">
+            <h2>Printer Image</h2>
+            <div class="printer-image">
+                <img src="images/printer_cr6_max.jpg" alt="CR-6 Max">
+            </div>
         </section>
     </main>
 
@@ -73,6 +102,25 @@
             &copy; 2023 Barnes Printing Company. All rights reserved.
         </div>
     </footer>
+
+    <script>
+        function responsiveNav() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    
+        function expandImage(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }  
+      </script>
 </body>
 
 </html>

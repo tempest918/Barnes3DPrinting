@@ -5,56 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barnes 3D Printing</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
     <link rel="stylesheet" href="static/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Your Logo">
-                  </a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li class="dropdown">
-                    <a href="#">Printers & Capabilities</a>
-                    <div class="dropdown-content">
-                        <a href="cr-6-max.html">CR-6 Max</a>
-                        <a href="photon-s.html">Anycubic Photon S</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Services Offered</a>
-                    <div class="dropdown-content">
-                        <a href="fdm.html">FDM Printing Service</a>
-                        <a href="sla.html">SLA Printing Service</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Gallery/Portfolio</a>
-                    <div class="dropdown-content">
-                        <a href="cr6-max-prints.html">CR-6 Prints</a>
-                        <a href="photon-s-prints.html">Photon S Prints</a>
-                    </div>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Home">
+            </a>
+            <a href="about.html">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">Printers & Capabilities
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="cr-6-max.html">CR-6 Max</a>
+                    <a href="photon-s.html">Anycubic Photon S</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Services Offered
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="fdm.html">FDM Printing Service</a>
+                    <a href="sla.html">SLA Printing Service</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Gallery/Portfolio
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="cr6-max-prints.html">CR-6 Prints</a>
+                    <a href="photon-s-prints.html">Photon S Prints</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+        </div>
+
+        <div class="hero-image">
+            <h1 class="font-effect-anaglyph">BARNES 3D PRINTING</h1>
+        </div>
     </header>
+
     <main>
-        <h1>Welcome to My Website</h1>
-        <p>My name is <strong>Anthony Barnes</strong> and I am a 3D printing enthusiast. I have been 3D printing for
-            several years now and have decided to start my own 3D printing business. I have two 3D printers, the CR-6
-            Max and the Anycubic Photon S. I offer both FDM and SLA printing services. I also have a gallery/portfolio
-            of some of my prints. If you are interested in my services, please contact me.</p>
+        <div id="wrapper">
+        <section class="info-section">
+            <h1>Welcome to My Website</h1>
+            <p>My name is <strong>Anthony Barnes</strong> and I am a 3D printing enthusiast. I have been 3D printing for
+                several years now and have decided to start my own 3D printing business. I have two 3D printers, the
+                CR-6
+                Max and the Anycubic Photon S. I offer both FDM and SLA printing services. I also have a
+                gallery/portfolio
+                of some of my prints. If you are interested in my services, please contact me.</p>
+        </section>
+
+        <section class="services-section">
+            <h2>Services Offered</h2>
+            <p>I specialize in providing high-quality 3D printing services tailored to meet various needs. My offered
+                services include:</p>
+            <ul>
+                <li><strong>FDM Printing Service:</strong> Utilizing Fused Deposition Modeling (FDM) technology to
+                    create robust and cost-effective prints.</li>
+                <a href="fdm.html">Learn More</a><br><br>
+                <li><strong>SLA Printing Service:</strong> Delivering high-precision prints using Stereolithography
+                    (SLA) technology.</li> <a href="sla.html">Learn More</a>
+            </ul>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Gallery/Portfolio</h2>
+            <p>Explore some of my showcased prints in the gallery/portfolio section:</p>
+            <a href="cr6-max-prints.html" class="button">CR-6 Prints</a>
+            <a href="photon-s-prints.html" class="button">Photon S Prints</a>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact</h2>
+            <p>For inquiries or to discuss your 3D printing needs, feel free to reach out:</p>
+            <a href="contact.html" class="button">Contact Me</a>
+        </section>
+    </div>
     </main>
 
     <footer>
@@ -62,6 +104,17 @@
             &copy; 2023 Barnes Printing Company. All rights reserved.
         </div>
     </footer>
+
+    <script>
+        function responsiveNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

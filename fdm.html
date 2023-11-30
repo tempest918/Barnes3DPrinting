@@ -5,57 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barnes 3D Printing :: FDM</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
     <link rel="stylesheet" href="static/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Your Logo">
-                </a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li class="dropdown">
-                    <a href="#">Printers & Capabilities</a>
-                    <div class="dropdown-content">
-                        <a href="cr-6-max.html">CR-6 Max</a>
-                        <a href="photon-s.html">Anycubic Photon S</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Services Offered</a>
-                    <div class="dropdown-content">
-                        <a href="fdm.html">FDM Printing Service</a>
-                        <a href="sla.html">SLA Printing Service</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Gallery/Portfolio</a>
-                    <div class="dropdown-content">
-                        <a href="cr6-max-prints.html">CR-6 Prints</a>
-                        <a href="photon-s-prints.html">Photon S Prints</a>
-                    </div>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Home">
+            </a>
+            <a href="about.html">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">Printers & Capabilities
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="cr-6-max.html">CR-6 Max</a>
+                    <a href="photon-s.html">Anycubic Photon S</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Services Offered
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="fdm.html">FDM Printing Service</a>
+                    <a href="sla.html">SLA Printing Service</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Gallery/Portfolio
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="cr6-max-prints.html">CR-6 Prints</a>
+                    <a href="photon-s-prints.html">Photon S Prints</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+        </div>
+
+        <div class="hero-image">
+            <h1 class="font-effect-anaglyph">BARNES 3D PRINTING</h1>
+        </div>
     </header>
 
     <main>
         <h1>FDM Printing Service</h1>
+
         <section class="service-details">
             <h2>Service Overview</h2>
-            <p>Our FDM Printing Service offers...</p>
-            <!-- Add more details about the FDM Printing Service here -->
+            <p>Our FDM Printing Service offers high-quality printing using advanced FDM technology. We specialize in
+                creating detailed prototypes, functional parts, and models.</p>
+            <p>The prints will be completed on the Creality CR-6 Max, which is a large-scale printer that can print
+                objects up to 400mm x 400mm x 400mm in size. The CR-6 Max is capable of printing with a wide range of
+                materials, including PLA, PETG, ABS, and more.</p>
+            <p>For examples of completed prints check out the <a href="cr6-max-prints.html">CR-6 Max Prints</a> page.</p>
         </section>
 
         <section class="service-features">
@@ -63,8 +77,38 @@
             <ul>
                 <li>High precision and accuracy</li>
                 <li>Wide range of material options</li>
-                <!-- Add specific service features -->
+                <li>Quick turnaround time</li>
+                <li>Ability to print complex geometries</li>
+                <li>Durable and functional prototypes</li>
+                <li>Support for large-scale printing</li>
             </ul>
+        </section>
+
+        <section class="pricing-calculator">
+            <h2>Pricing Calculator</h2>
+            <p>Use the calculator below to estimate the cost of your print.</p>
+            <label for="printing-time">Printing Time (hours):</label>
+            <input type="number" id="printing-time" name="printing-time" min="1" step="1">
+
+            <label for="filament-weight">Filament Weight (grams):</label>
+            <input type="number" id="filament-weight" name="filament-weight" min="1" step="1">
+
+            <label for="material-type">Select Material Type:</label>
+            <select id="material-type" name="material-type" onchange="toggleCustomMaterialPrice()">
+                <option value="PLA">PLA ($25/kg)</option>
+                <option value="PETG">PETG ($30/kg)</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="custom-material-price">Custom Material Price ($/kg):</label>
+            <input type="number" id="custom-material-price" name="custom-material-price" step="0.01" disabled>
+
+            <label for="calculate-cost">Calculate Cost:</label>
+            <button onclick="calculateCost()">Calculate</button>
+
+            <p id="result"></p>
+            <p>For more information about our pricing, please <a href="contact.html">contact</a> us.</p>
+
         </section>
     </main>
 
@@ -73,6 +117,60 @@
             &copy; 2023 Barnes Printing Company. All rights reserved.
         </div>
     </footer>
+
+    <script>
+        function responsiveNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function calculateCost() {
+            const printingTime = parseFloat(document.getElementById('printing-time').value);
+            const filamentWeight = parseFloat(document.getElementById('filament-weight').value);
+            const materialType = document.getElementById('material-type').value;
+            let customMaterialPrice = 0;
+
+            if (materialType === 'other') {
+                customMaterialPrice = parseFloat(document.getElementById('custom-material-price').value);
+            }
+
+            const electricityCostPerHour = 0.15;
+            const commissionFee = 0.20;
+
+            let materialCost = 0;
+            if (materialType === 'PLA') {
+                materialCost = (filamentWeight * (25 / 1000)) * 2;
+            } else if (materialType === 'PETG') {
+                materialCost = (filamentWeight * (30 / 1000)) * 2;
+            } else if (materialType === 'other') {
+                materialCost = (filamentWeight * (customMaterialPrice / 1000)) * 2;
+            }
+
+            const electricityCost = (80 * printingTime * electricityCostPerHour) / 1000;
+
+            let totalCost = materialCost + electricityCost;
+            totalCost += totalCost * commissionFee;
+
+            const resultElement = document.getElementById('result');
+            resultElement.innerHTML = `Printing Cost: $${totalCost.toFixed(2)}`;
+        }
+
+        function toggleCustomMaterialPrice() {
+            const materialType = document.getElementById('material-type').value;
+            const customMaterialPriceInput = document.getElementById('custom-material-price');
+
+            if (materialType === 'other') {
+                customMaterialPriceInput.removeAttribute('disabled');
+            } else {
+                customMaterialPriceInput.setAttribute('disabled', 'disabled');
+            }
+        }
+
+    </script>
 </body>
 
 </html>
