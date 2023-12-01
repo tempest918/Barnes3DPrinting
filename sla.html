@@ -60,62 +60,69 @@
     </header>
 
     <main>
-        <h1>SLA Printing Service</h1>
-        <section class="service-details">
-            <h2>Service Overview</h2>
-            <p>Our SLA Printing Service provides high-resolution prints with an exceptional surface finish. SLA printing
-                is
-                ideal for small, detailed prints that require a high level of accuracy. SLA printing is also ideal for
-                printing
-                models that require a high level of detail, such as figurines, miniatures, and jewelry.</p>
-            <p>Our SLA printer is the Anycubic Photon S. The Photon S is a DLP printer that uses a UV light source to
-                cure
-                liquid resin. The Photon S has a build volume of 115 x 65 x 165 mm and a layer resolution of 0.01 mm.
-            </p>
-            <p>For examples of completed prints check out the <a href="photon-s-prints.html">Photon S Prints</a> page.</p>
-        </section>
+        <div id="wrapper">
+            <h1>SLA Printing Service</h1>
+            <section class="service-details">
+                <h2>Service Overview</h2>
+                <p>Our SLA Printing Service provides high-resolution prints with an exceptional surface finish. SLA
+                    printing
+                    is
+                    ideal for small, detailed prints that require a high level of accuracy. SLA printing is also ideal
+                    for
+                    printing
+                    models that require a high level of detail, such as figurines, miniatures, and jewelry.</p>
+                <p>Our SLA printer is the Anycubic Photon S. The Photon S is a DLP printer that uses a UV light source
+                    to
+                    cure
+                    liquid resin. The Photon S has a build volume of 115 x 65 x 165 mm and a layer resolution of 0.01
+                    mm.
+                </p>
+                <p>For examples of completed prints check out the <a href="photon-s-prints.html">Photon S Prints</a>
+                    page.</p>
+            </section>
 
-        <section class="service-features">
-            <h2>Key Features</h2>
-            <ul>
-                <li>High-resolution printing</li>
-                <li>Exceptional surface finish</li>
-                <li>Wide range of material options</li>
-                <li>Wide range of color options</li>
-                <li>Wide range of material properties</li>
-                <li>Quick turnaround time</li>
-                <li>Ability to print complex geometries</li>
-                <li>Support for small-scale printing</li>
-            </ul>
-        </section>
+            <section class="service-features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>High-resolution printing</li>
+                    <li>Exceptional surface finish</li>
+                    <li>Wide range of material options</li>
+                    <li>Wide range of color options</li>
+                    <li>Wide range of material properties</li>
+                    <li>Quick turnaround time</li>
+                    <li>Ability to print complex geometries</li>
+                    <li>Support for small-scale printing</li>
+                </ul>
+            </section>
 
-        <section class="pricing-calculator">
-            <h2>Pricing Calculator</h2>
-            <p>Use the calculator below to estimate the cost of your print.</p>
-            <label for="printing-time">Printing Time (hours):</label>
-            <input type="number" id="printing-time" name="printing-time" min="1" step="1">
+            <section class="pricing-calculator">
+                <h2>Pricing Calculator</h2>
+                <p>Use the calculator below to estimate the cost of your print.</p>
+                <label for="printing-time">Printing Time (hours):</label>
+                <input type="number" id="printing-time" name="printing-time" min="1" step="1">
 
-            <label for="filament-weight">Filament Weight (grams):</label>
-            <input type="number" id="filament-weight" name="filament-weight" min="1" step="1">
+                <label for="filament-weight">Filament Weight (grams):</label>
+                <input type="number" id="filament-weight" name="filament-weight" min="1" step="1">
 
-            <label for="material-type">Select Material Type:</label>
-            <select id="material-type" name="material-type" onchange="toggleCustomMaterialPrice()">
-                <option value="good">Good - $30/kg</option>
-                <option value="better">Better - $50/kg</option>
-                <option value="best">Best - $70/kg</option>
-                <option value="other">Other</option>
-            </select>
+                <label for="material-type">Select Material Type:</label>
+                <select id="material-type" name="material-type" onchange="toggleCustomMaterialPrice()">
+                    <option value="good">Good - $30/kg</option>
+                    <option value="better">Better - $50/kg</option>
+                    <option value="best">Best - $70/kg</option>
+                    <option value="other">Other</option>
+                </select>
 
-            <label for="custom-material-price">Custom Material Price ($/kg):</label>
-            <input type="number" id="custom-material-price" name="custom-material-price" step="0.01" disabled>
+                <label for="custom-material-price">Custom Material Price ($/kg):</label>
+                <input type="number" id="custom-material-price" name="custom-material-price" step="0.01" disabled>
 
-            <label for="calculate-cost">Calculate Cost:</label>
-            <button onclick="calculateCost()">Calculate</button>
+                <label for="calculate-cost">Calculate Cost:</label>
+                <button onclick="calculateCost()">Calculate</button>
 
-            <p id="result"></p>
-            <p>For more information about our pricing, please <a href="contact.html">contact</a> us.</p>
+                <p id="result"></p>
+                <p>For more information about our pricing, please <a href="contact.html">contact</a> us.</p>
 
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>

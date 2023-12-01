@@ -5,15 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Barnes 3D Printing :: CR-6 Max Prints</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+	<link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
+	<link rel="stylesheet" href="static/styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <header>
@@ -59,23 +59,26 @@
 
 <body>
 	<main>
-		<h1>CR-6 Max Prints</h1>
-		<p>Here are some examples of prints I have done on my Creality CR-6 Max. Each of the prints in the examples were
-			printed with a .4mm nozzle and .2mm layer height.</p>
-		<div class="scroll-container">
-			<img src="images/fdm_print_1.jpg" alt="Deadpool Bust (Front)" onclick="expandImage(this);">
-			<img src="images/fdm_print_2.jpg" alt="Deadpool Bust (Rear)" onclick="expandImage(this);">
-			<img src="images/fdm_print_3.jpg" alt="Deadpool Bust (Chest Detail)" onclick="expandImage(this);">
-			<img src="images/fdm_print_4.jpg" alt="Deadpool Bust (Face Detail)" onclick="expandImage(this);">
-			<img src="images/fdm_print_5.jpg" alt="T-Rex Skull (Front)" onclick="expandImage(this);">
-			<img src="images/fdm_print_6.jpg" alt="T-Rex Skull (Tooth Detail)" onclick="expandImage(this);">
-			<img src="images/fdm_print_7.jpg" alt="T-Rex Skull (Eye Detail)" onclick="expandImage(this);">
-		</div>
+		<div id="wrapper">
+			<h1>CR-6 Max Prints</h1>
+			<p>Here are some examples of prints I have done on my Creality CR-6 Max. Each of the prints in the examples
+				were
+				printed with a .4mm nozzle and .2mm layer height.</p>
+			<div class="scroll-container">
+				<img src="images/fdm_print_1.jpg" alt="Deadpool Bust (Front)" onclick="expandImage(this);">
+				<img src="images/fdm_print_2.jpg" alt="Deadpool Bust (Rear)" onclick="expandImage(this);">
+				<img src="images/fdm_print_3.jpg" alt="Deadpool Bust (Chest Detail)" onclick="expandImage(this);">
+				<img src="images/fdm_print_4.jpg" alt="Deadpool Bust (Face Detail)" onclick="expandImage(this);">
+				<img src="images/fdm_print_5.jpg" alt="T-Rex Skull (Front)" onclick="expandImage(this);">
+				<img src="images/fdm_print_6.jpg" alt="T-Rex Skull (Tooth Detail)" onclick="expandImage(this);">
+				<img src="images/fdm_print_7.jpg" alt="T-Rex Skull (Eye Detail)" onclick="expandImage(this);">
+			</div>
 
-		<div class="container">
-			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-			<img id="expandedImg" style="width:100%">
-			<div id="imgtext"></div>
+			<div class="container">
+				<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+				<img id="expandedImg" style="width:100%">
+				<div id="imgtext"></div>
+			</div>
 		</div>
 	</main>
 
@@ -84,7 +87,7 @@
 			&copy; 2023 Barnes Printing Company. All rights reserved.
 		</div>
 	</footer>
-	
+
 	<script>
 		function responsiveNav() {
 			var x = document.getElementById("myTopnav");

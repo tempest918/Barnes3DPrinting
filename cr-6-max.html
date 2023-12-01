@@ -60,41 +60,47 @@
     </header>
 
     <main>
-        <h1>CR-6 Max</h1>
-        <section class="printer-details">
-            <h2>Printer Details</h2>
-            <p>The CR-6 Max is a versatile 3D printer known for its large build volume and high-quality prints. It is
-                capable of printing with a variety of materials, including PLA, ABS, PETG, TPU, and more. The CR-6 Max
-                is a great choice for printing large, functional parts.</p>
-            <p>The CR-6 Max is a Cartesian-style printer, meaning that it uses a gantry system to move the print head
-                along the X and Y axes, and a bed that moves along the Z axis. The CR-6 Max is equipped with a heated
-                bed, which allows it to print with a variety of materials. The CR-6 Max is also equipped with a
-                filament runout sensor, which pauses the print if the printer runs out of filament.</p>
-        </section>
+        <div id="wrapper">
+            <h1>CR-6 Max</h1>
+            <section class="printer-details">
+                <h2>Printer Details</h2>
+                <p>The CR-6 Max is a versatile 3D printer known for its large build volume and high-quality prints. It
+                    is
+                    capable of printing with a variety of materials, including PLA, ABS, PETG, TPU, and more. The CR-6
+                    Max
+                    is a great choice for printing large, functional parts.</p>
+                <p>The CR-6 Max is a Cartesian-style printer, meaning that it uses a gantry system to move the print
+                    head
+                    along the X and Y axes, and a bed that moves along the Z axis. The CR-6 Max is equipped with a
+                    heated
+                    bed, which allows it to print with a variety of materials. The CR-6 Max is also equipped with a
+                    filament runout sensor, which pauses the print if the printer runs out of filament.</p>
+            </section>
 
-        <section class="printer-specs">
-            <h2>Specifications</h2>
-            <ul>
-                <li>Printing Technology: FDM</li>
-                <li>Build Volume: 400mm x 400mm x 400mm</li>
-                <li>Layer Resolution: 0.1mm - 0.4mm</li>
-                <li>Maximum Print Speed: 80mm/s</li>
-                <li>Maximum Travel Speed: 150mm/s</li>
-                <li>Maximum Hotend Temperature: 260&deg;C</li>
-                <li>Maximum Heated Bed Temperature: 110&deg;C</li>
-                <li>Supported Materials: PLA, ABS, PETG, TPU, and more</li>
-                <li>Connectivity: USB, SD Card</li>
-                <li>Printer Dimensions: 650mm x 550mm x 720mm</li>
-                <li>Printer Weight: 15kg</li>
-            </ul>
-        </section>
+            <section class="printer-specs">
+                <h2>Specifications</h2>
+                <ul>
+                    <li>Printing Technology: FDM</li>
+                    <li>Build Volume: 400mm x 400mm x 400mm</li>
+                    <li>Layer Resolution: 0.1mm - 0.4mm</li>
+                    <li>Maximum Print Speed: 80mm/s</li>
+                    <li>Maximum Travel Speed: 150mm/s</li>
+                    <li>Maximum Hotend Temperature: 260&deg;C</li>
+                    <li>Maximum Heated Bed Temperature: 110&deg;C</li>
+                    <li>Supported Materials: PLA, ABS, PETG, TPU, and more</li>
+                    <li>Connectivity: USB, SD Card</li>
+                    <li>Printer Dimensions: 650mm x 550mm x 720mm</li>
+                    <li>Printer Weight: 15kg</li>
+                </ul>
+            </section>
 
-        <section class="printer-image">
-            <h2>Printer Image</h2>
-            <div class="printer-image">
-                <img src="images/printer_cr6_max.jpg" alt="CR-6 Max">
-            </div>
-        </section>
+            <section class="printer-image">
+                <h2>Printer Image</h2>
+                <div class="printer-image">
+                    <img src="images/printer_cr6_max.jpg" alt="CR-6 Max">
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -105,22 +111,22 @@
 
     <script>
         function responsiveNav() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    
+
         function expandImage(imgs) {
-          var expandImg = document.getElementById("expandedImg");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
         }  
-      </script>
+    </script>
 </body>
 
 </html>

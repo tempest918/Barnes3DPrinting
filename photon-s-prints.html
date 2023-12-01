@@ -5,15 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Barnes 3D Printing :: Photon S Prints</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+	<link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&effect=anaglyph' rel='stylesheet'>
+	<link rel="stylesheet" href="static/styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -54,33 +54,38 @@
 			<h1 class="font-effect-anaglyph">BARNES 3D PRINTING</h1>
 		</div>
 	</header>
+
 	<main>
-		<h1>Photon S Prints</h1>
-		<p>Here are some examples of prints I have done on my Anycubic Photon S.All prints were completed with Anycubic
-			Basic Grey Resin</p>
-		<div class="scroll-container">
-			<img src="images/sla_print_1.jpg" alt="Male Half-Orc Barbarian Miniature (Front)"
-				onclick="expandImage(this);">
-			<img src="images/sla_print_1.jpg" alt="Male Half-Orc Barbarian Miniature (Front)"
-				onclick="expandImage(this);">
-			<img src="images/sla_print_2.jpg" alt="Male Half-Orc Barbarian Miniature (Front Zoomed)"
-				onclick="expandImage(this);">
-			<img src="images/sla_print_3.jpg" alt="Male Half-Orc Barbarian Miniature (Face Forward)"
-				onclick="expandImage(this);">
-			<img src="images/sla_print_4.jpg" alt="Male Half-Orc Barbarian Miniature (Platform Detail)"
-				onclick="expandImage(this);">
-			<img src="images/sla_print_5.jpg" alt="Male Half-Orc Barbarian Miniature (Back Detail)"
-				onclick="expandImage(this);">
-			<img src="images/sla_print_6.jpg" alt="Male Half-Orc Barbarian Miniature (Scale)"
-				onclick="expandImage(this);">
-			<img src="images/sla_print_7.jpg" alt="Female Elf Wizard Minaiture (Front)" onclick="expandImage(this);">
-			<img src="images/sla_print_8.jpg" alt="Female Elf Wizard Minaiture (Platform Detail)"
-				onclick="expandImage(this);">
-		</div>
-		<div class="container">
-			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-			<img id="expandedImg" style="width:100%">
-			<div id="imgtext"></div>
+		<div id="wrapper">
+			<h1>Photon S Prints</h1>
+			<p>Here are some examples of prints I have done on my Anycubic Photon S.All prints were completed with
+				Anycubic
+				Basic Grey Resin</p>
+			<div class="scroll-container">
+				<img src="images/sla_print_1.jpg" alt="Male Half-Orc Barbarian Miniature (Front)"
+					onclick="expandImage(this);">
+				<img src="images/sla_print_1.jpg" alt="Male Half-Orc Barbarian Miniature (Front)"
+					onclick="expandImage(this);">
+				<img src="images/sla_print_2.jpg" alt="Male Half-Orc Barbarian Miniature (Front Zoomed)"
+					onclick="expandImage(this);">
+				<img src="images/sla_print_3.jpg" alt="Male Half-Orc Barbarian Miniature (Face Forward)"
+					onclick="expandImage(this);">
+				<img src="images/sla_print_4.jpg" alt="Male Half-Orc Barbarian Miniature (Platform Detail)"
+					onclick="expandImage(this);">
+				<img src="images/sla_print_5.jpg" alt="Male Half-Orc Barbarian Miniature (Back Detail)"
+					onclick="expandImage(this);">
+				<img src="images/sla_print_6.jpg" alt="Male Half-Orc Barbarian Miniature (Scale)"
+					onclick="expandImage(this);">
+				<img src="images/sla_print_7.jpg" alt="Female Elf Wizard Minaiture (Front)"
+					onclick="expandImage(this);">
+				<img src="images/sla_print_8.jpg" alt="Female Elf Wizard Minaiture (Platform Detail)"
+					onclick="expandImage(this);">
+			</div>
+			<div class="container">
+				<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+				<img id="expandedImg" style="width:100%">
+				<div id="imgtext"></div>
+			</div>
 		</div>
 	</main>
 

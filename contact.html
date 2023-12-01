@@ -60,36 +60,38 @@
     </header>
 
     <main>
-        <h1>Contact Me</h1>
-        <form action="https://formspree.io/f/mzblldjj" method="POST">
-            <label>
-                Your Name:
-                <input type="text" name="name" required>
-            </label>
-            <label>
-                Your Email:
-                <input type="email" name="email" required>
-            </label>
-            <label>
-                Your Phone Number:
-                <input type="tel" name="phone">
-            </label>
-            <fieldset>
-                <legend>Select Service:</legend>
+        <div id="wrapper">
+            <h1>Contact Me</h1>
+            <form action="https://formspree.io/f/mzblldjj" method="POST">
                 <label>
-                    <input type="radio" name="service" value="FDM"> FDM Printing
+                    Your Name:
+                    <input type="text" name="name" required>
                 </label>
                 <label>
-                    <input type="radio" name="service" value="SLA"> SLA Printing
+                    Your Email:
+                    <input type="email" name="email" required>
                 </label>
-            </fieldset>
-            <br>
-            <label>
-                Item Description:
-                <textarea name="item_description" required></textarea>
-            </label>
-            <button type="submit">Send</button>
-        </form>
+                <label>
+                    Your Phone Number:
+                    <input type="tel" name="phone">
+                </label>
+                <fieldset>
+                    <legend>Select Service:</legend>
+                    <label>
+                        <input type="radio" name="service" value="FDM"> FDM Printing
+                    </label>
+                    <label>
+                        <input type="radio" name="service" value="SLA"> SLA Printing
+                    </label>
+                </fieldset>
+                <br>
+                <label>
+                    Item Description:
+                    <textarea name="item_description" required></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </main>
 
     <footer>
