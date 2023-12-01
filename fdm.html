@@ -60,56 +60,60 @@
     </header>
 
     <main>
-        <h1>FDM Printing Service</h1>
+        <div id="wrapper">
+            <h1>FDM Printing Service</h1>
 
-        <section class="service-details">
-            <h2>Service Overview</h2>
-            <p>Our FDM Printing Service offers high-quality printing using advanced FDM technology. We specialize in
-                creating detailed prototypes, functional parts, and models.</p>
-            <p>The prints will be completed on the Creality CR-6 Max, which is a large-scale printer that can print
-                objects up to 400mm x 400mm x 400mm in size. The CR-6 Max is capable of printing with a wide range of
-                materials, including PLA, PETG, ABS, and more.</p>
-            <p>For examples of completed prints check out the <a href="cr6-max-prints.html">CR-6 Max Prints</a> page.</p>
-        </section>
+            <section class="service-details">
+                <h2>Service Overview</h2>
+                <p>Our FDM Printing Service offers high-quality printing using advanced FDM technology. We specialize in
+                    creating detailed prototypes, functional parts, and models.</p>
+                <p>The prints will be completed on the Creality CR-6 Max, which is a large-scale printer that can print
+                    objects up to 400mm x 400mm x 400mm in size. The CR-6 Max is capable of printing with a wide range
+                    of
+                    materials, including PLA, PETG, ABS, and more.</p>
+                <p>For examples of completed prints check out the <a href="cr6-max-prints.html">CR-6 Max Prints</a>
+                    page.</p>
+            </section>
 
-        <section class="service-features">
-            <h2>Key Features</h2>
-            <ul>
-                <li>High precision and accuracy</li>
-                <li>Wide range of material options</li>
-                <li>Quick turnaround time</li>
-                <li>Ability to print complex geometries</li>
-                <li>Durable and functional prototypes</li>
-                <li>Support for large-scale printing</li>
-            </ul>
-        </section>
+            <section class="service-features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>High precision and accuracy</li>
+                    <li>Wide range of material options</li>
+                    <li>Quick turnaround time</li>
+                    <li>Ability to print complex geometries</li>
+                    <li>Durable and functional prototypes</li>
+                    <li>Support for large-scale printing</li>
+                </ul>
+            </section>
 
-        <section class="pricing-calculator">
-            <h2>Pricing Calculator</h2>
-            <p>Use the calculator below to estimate the cost of your print.</p>
-            <label for="printing-time">Printing Time (hours):</label>
-            <input type="number" id="printing-time" name="printing-time" min="1" step="1">
+            <section class="pricing-calculator">
+                <h2>Pricing Calculator</h2>
+                <p>Use the calculator below to estimate the cost of your print.</p>
+                <label for="printing-time">Printing Time (hours):</label>
+                <input type="number" id="printing-time" name="printing-time" min="1" step="1">
 
-            <label for="filament-weight">Filament Weight (grams):</label>
-            <input type="number" id="filament-weight" name="filament-weight" min="1" step="1">
+                <label for="filament-weight">Filament Weight (grams):</label>
+                <input type="number" id="filament-weight" name="filament-weight" min="1" step="1">
 
-            <label for="material-type">Select Material Type:</label>
-            <select id="material-type" name="material-type" onchange="toggleCustomMaterialPrice()">
-                <option value="PLA">PLA ($25/kg)</option>
-                <option value="PETG">PETG ($30/kg)</option>
-                <option value="other">Other</option>
-            </select>
+                <label for="material-type">Select Material Type:</label>
+                <select id="material-type" name="material-type" onchange="toggleCustomMaterialPrice()">
+                    <option value="PLA">PLA ($25/kg)</option>
+                    <option value="PETG">PETG ($30/kg)</option>
+                    <option value="other">Other</option>
+                </select>
 
-            <label for="custom-material-price">Custom Material Price ($/kg):</label>
-            <input type="number" id="custom-material-price" name="custom-material-price" step="0.01" disabled>
+                <label for="custom-material-price">Custom Material Price ($/kg):</label>
+                <input type="number" id="custom-material-price" name="custom-material-price" step="0.01" disabled>
 
-            <label for="calculate-cost">Calculate Cost:</label>
-            <button onclick="calculateCost()">Calculate</button>
+                <label for="calculate-cost">Calculate Cost:</label>
+                <button onclick="calculateCost()">Calculate</button>
 
-            <p id="result"></p>
-            <p>For more information about our pricing, please <a href="contact.html">contact</a> us.</p>
+                <p id="result"></p>
+                <p>For more information about our pricing, please <a href="contact.html">contact</a> us.</p>
 
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>

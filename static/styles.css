@@ -34,6 +34,7 @@ header {
 
 main {
     padding: 2em;
+    flex: 1;
 }
 
 section {
@@ -61,7 +62,8 @@ a:hover {
     text-decoration: underline;
 }
 
-p, li {
+p,
+li {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -187,10 +189,6 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-}
-
 .printer-image img {
     max-width: 100%;
     height: auto;
@@ -211,15 +209,16 @@ main {
 
 #wrapper {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 1920px;
     padding: 0 20px;
     overflow: hidden;
+    box-sizing: content-box;
 }
 
 /* Form styles */
 form {
     max-width: 600px;
-    width: auto; 
+    width: auto;
     margin: 0 auto;
     padding: 2em;
     background-color: #f9f9f9;
@@ -287,7 +286,7 @@ div.scroll-container img {
     position: absolute;
     bottom: 15px;
     left: 15px;
-    color: white;
+    color: black;
     font-size: 20px;
 }
 
@@ -295,7 +294,7 @@ div.scroll-container img {
     position: absolute;
     top: 10px;
     right: 15px;
-    color: white;
+    color: black;
     font-size: 35px;
     cursor: pointer;
 }
@@ -338,7 +337,6 @@ div.scroll-container img {
     background-color: #1e90ff;
 }
 
-/* Result display */
 #result {
     margin-top: 15px;
     font-weight: bold;
@@ -418,16 +416,12 @@ div.scroll-container img {
     }
 }
 
-@media screen and (min-width: 1024px) {
-    header {
-        justify-content: left;
+@media screen and (min-width: 1920px) {
+
+    body {
+        background-size: cover;
+        background-repeat: repeat-y;
+
     }
 
-    .footer-content {
-        justify-content: space-around;
-    }
-
-    .footer-section {
-        margin: 0 2em;
-    }
 }
